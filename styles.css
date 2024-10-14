@@ -32,7 +32,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 10px 0; /* Added padding for better spacing */
+    padding: 10px 0;
 }
 
 nav .container {
@@ -61,7 +61,7 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-left: auto; /* Ensure nav items align to the right */
+    margin-left: auto;
 }
 
 nav li {
@@ -80,7 +80,7 @@ nav a::after {
     content: '';
     height: 2px;
     width: 0%;
-    background-color: #FFD700; /* Kennesaw State's gold */
+    background-color: #FFD700;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -109,7 +109,7 @@ section {
 
 section h3 {
     font-size: 2.5em;
-    color: #000; /* Black for strong emphasis */
+    color: #000;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -120,74 +120,50 @@ section p {
     margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #000; /* Kennesaw State's black */
-    color: #FFD700; /* Kennesaw State's gold */
-    text-align: right; /* Align footer content to the right */
-    padding: 20px 0;
-    margin-top: auto;
+/* Book Results & Bookshelf */
+#search-results, #public-bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book {
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book img {
     width: 100%;
-    position: relative;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
-footer a {
-    color: #FFD700; /* Kennesaw State's gold */
-    text-decoration: none;
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Back-to-Top Button */
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    background-color: #000; /* Kennesaw State's black */
-    color: #FFD700; /* Kennesaw State's gold */
+#pagination button {
+    background-color: #000;
+    color: #FFD700;
     border: none;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 18px;
+    margin: 0 5px;
+    padding: 8px 12px;
+    border-radius: 4px;
     cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s;
+    transition: background-color 0.3s;
 }
 
-#back-to-Top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-#back-to-Top:hover {
+#pagination button:hover {
     background-color: #333;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #nav-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #000; /* Kennesaw State's black */
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    nav li {
-        margin: 15px 0;
-        text-align: center;
-    }
-}

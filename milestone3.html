@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <title>Milestone 3 | Bayden Blackwell Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="container">
             <div class="nav-brand">
                 <h1><a href="index.html">Bayden Blackwell</a></h1>
             </div>
-            <button id="nav-toggle">&#9776;</button>
-            <ul id="nav-menu">
-                <li><a href="milestone1.html">Milestone 1</a></li>
-                <li><a href="milestone2.html">Milestone 2</a></li>
-                <li><a href="milestone3.html" class="active">Milestone 3</a></li>
-                <li><a href="milestone4.html">Milestone 4</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Wrapper Start -->
     <div class="wrapper">
-        <!-- Main Content -->
         <main class="container">
             <section>
-                <h3>Milestone 3</h3>
+                <h3>Search Books</h3>
+                <input type="text" id="search-term" placeholder="Enter keywords...">
+                <button id="search-button">Search</button>
+                <div id="search-results"></div>
+                <div id="pagination"></div>
+            </section>
+
+            <section>
+                <h3>Book Details</h3>
+                <div id="book-details"></div>
+            </section>
+
+            <section>
+                <h3>Public Bookshelf</h3>
+                <div id="public-bookshelf"></div>
             </section>
         </main>
     </div>
-    <!-- Wrapper End -->
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Bayden Blackwell | <a href="https://www.kennesaw.edu/ccse/academics/information-technology/" target="_blank">KSU IT Department</a></p>
+            <p>&copy; <span id="current-year"></span> Bayden Blackwell | KSU IT Department</p>
         </div>
     </footer>
 
-    <!-- Back-to-Top Button -->
-    <button id="back-to-top">↑</button>
-
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
